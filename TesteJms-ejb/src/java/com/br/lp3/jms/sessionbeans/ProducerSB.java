@@ -19,9 +19,9 @@ import javax.jms.TextMessage;
  */
 @Stateless
 public class ProducerSB implements ProducerSBLocal {
-    @Resource(mappedName = "teste_JNDI")
+    @Resource(mappedName = "jms/giovanni")
     private Queue teste_JNDI;
-    @Resource(mappedName = "testeFactory")
+    @Resource(mappedName = "jms/giovanniFactory")
     private ConnectionFactory testeFactory;
 
     private Message createJMSMessageForteste_JNDI(Session session, Object messageData) throws JMSException {

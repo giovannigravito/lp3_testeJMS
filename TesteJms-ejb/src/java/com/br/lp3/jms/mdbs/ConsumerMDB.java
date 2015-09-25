@@ -18,7 +18,7 @@ import javax.jms.TextMessage;
  *
  * @author 31427782
  */
-@MessageDriven(mappedName = "teste_JNDI", activationConfig = {
+@MessageDriven(mappedName = "jms/giovanni", activationConfig = {
     @ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Queue")
 })
 public class ConsumerMDB implements MessageListener {
